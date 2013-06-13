@@ -4,14 +4,14 @@
 /  panel == Span
 */
 body {
-  padding-left: 8%;
-  padding-right: 8%;
-  height: 100%;
+  margin-left: 8%;
+  margin-right: 8%;
+  min-height: 100%;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .wall {
-  display: inline-block;
-  float: left;
   min-height: 3%;
   width: 100%;
   *zoom: 1;
@@ -33,15 +33,21 @@ body {
 [class*="panel"] {
   float: left;
   min-height: 1px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 
 /* collapsable ------------------ */
-/* High resolution screens (greater than 1299px) */
-@media (min-width: 1299px) {
+/* Greater than 1megapixel screens */
+@media (min-width: 1440px) {
  [class*="panel"] {
     margin: .91% .91%;
-  }  
+  }
+
+  .half, .third  {
+    display: none;
+  }
 
   .panel1 {
     width: 6.333333%;
@@ -92,12 +98,16 @@ body {
   } 
 }
 
-/* Large screens 1200px to 1298px */
-@media (min-width: 1200px) and (max-width: 1310px) { 
+/* Large screens */
+@media (min-width: 1280px) and (max-width: 1439px) { 
   [class*="panel"] {
     margin: .90% .90%;
   } 
 
+  .half, .third  {
+    display: none;
+  }
+
   .panel1 {
     width: 6.333333%;
   }
@@ -147,10 +157,14 @@ body {
   }
 }
 
-/* Mid-range screens 800px to 1200px */
-@media (min-width: 800px) and (max-width: 1199px) {
+/* Mid-range screens */
+@media (min-width: 1024px) and (max-width: 1279px) {
   [class*="panel"] {
     margin: .85% .85%;
+  }
+
+  .whole, .third  {
+    display: none;
   } 
 
   .panel1 {
@@ -178,10 +192,110 @@ body {
   }
 }
 
-/* Small screens */
-@media (max-width: 799px) {
+/* Low-range screens and tablets */
+@media (min-width: 800px) and (max-width: 1023px) {
   [class*="panel"] {
-    margin: .7068% .7068%;
+    margin: .85% .85%;
+  } 
+
+  .whole, .third  {
+    display: none;
+  }
+
+  .panel1 {
+    width: 14.666667%;
+  }
+
+  .panel2 {
+    width: 31.333333%;
+  }
+
+  .panel3 {
+    width: 48%;
+  }
+
+  .panel4 {
+    width: 64.666667%;
+  }
+
+  .panel5 {
+    width: 81.333333%;
+  }
+
+  .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12 {
+    width: 98%;
+  }
+}
+
+/* tablets and mobile horizontal views */
+@media (min-width: 640px) and (max-width: 799px) {
+  [class*="panel"] {
+    margin: .81% .81%;
+  } 
+
+  .whole, .third  {
+    display: none;
+  }
+
+  .panel1 {
+    width: 14.666667%;
+  }
+
+  .panel2 {
+    width: 31.333333%;
+  }
+
+  .panel3 {
+    width: 48%;
+  }
+
+  .panel4 {
+    width: 64.666667%;
+  }
+
+  .panel5 {
+    width: 81.333333%;
+  }
+
+  .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12 {
+    width: 98%;
+  }
+}
+
+/* mobile vertical views */
+@media (min-width: 322px) and (max-width: 639px) {
+  [class*="panel"] {
+    margin: .706% .706%;
+  }
+
+  .half, .whole  {
+    display: none;
+  } 
+
+  .panel1 {
+    width: 31.333333%;
+  }
+
+  .panel2 {
+    width: 48%;
+  }
+
+  .panel3 {
+    width: 64.666667%;
+  }
+
+  .panel4, .panel5,  .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12 {
+    width: 98%;
+  }
+}
+
+@media (max-width: 321px) {
+  [class*="panel"] {
+    margin: .706% .706%;
+  }
+
+  .half, .whole  {
+    display: none;
   } 
 
   .panel1 {
