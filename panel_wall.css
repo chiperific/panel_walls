@@ -39,10 +39,16 @@ body {
 
 
 /* collapsable ------------------ */
+/* ================ Module 1 =================== */
 /* Greater than 1megapixel screens */
 @media (min-width: 1440px) {
  [class*="panel"] {
     margin: .91% .91%;
+  }
+
+/* F*ck the Width!!! */
+  .ftw1 {
+    margin: 100% !important;
   }
 
   .half, .third  {
@@ -104,6 +110,11 @@ body {
     margin: .90% .90%;
   } 
 
+/* F*ck the Width!!! */
+  .ftw1 {
+    margin: 100% !important;
+  }
+
   .half, .third  {
     display: none;
   }
@@ -157,10 +168,16 @@ body {
   }
 }
 
+/* ================ Module 2 =================== */
 /* Mid-range screens */
 @media (min-width: 1024px) and (max-width: 1279px) {
   [class*="panel"] {
     margin: .85% .85%;
+  }
+
+/* F*ck the Width!!! */
+  .ftw2 {
+    margin: 100% !important;
   }
 
   .whole, .third  {
@@ -198,6 +215,11 @@ body {
     margin: .85% .85%;
   } 
 
+/* F*ck the Width!!! */
+  .ftw2 {
+    margin: 100% !important;
+  }
+
   .whole, .third  {
     display: none;
   }
@@ -231,6 +253,11 @@ body {
 @media (min-width: 640px) and (max-width: 799px) {
   [class*="panel"] {
     margin: .81% .81%;
+  }
+
+/* F*ck the Width!!! */
+  .ftw2 {
+    margin: 100% !important;
   } 
 
   .whole, .third  {
@@ -272,6 +299,11 @@ body {
     display: none;
   } 
 
+/* F*ck the Width!!! */
+  .ftw3 {
+    margin: 100% !important;
+  }
+
   .panel1 {
     width: 31.333333%;
   }
@@ -298,6 +330,11 @@ body {
     display: none;
   } 
 
+/* F*ck the Width!!! */
+  .ftw3 {
+    margin: 100% !important;
+  }
+  
   .panel1 {
     width: 31.333333%;
   }
