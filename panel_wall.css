@@ -1,14 +1,24 @@
-/* Panel wall. Fits any room, any time.
-/
-/ Wall == Row
-/  panel == Span
-*/
+/*===================================================\
+||   |  |  Panel |  wall  |   |  |    ||   |  | | /` |
+||   |  |    Fits|any room, any time. ||   |  | | (@)|
+||   |  |     |  |        |   |  |    ||   |  | | ` ,|
+|| Created for|everyone. Please leave these|credits  |
+|| for the sake of my ego.|   |  |    ||   |  | |    |
+||   |Designed|by Chiperific. | Influenced by | |    |
+||Twitter bootstrap's fluid 12+column ||layout| |    |
+||   |  |     |  |        |   |  |   ,||   |  | |    | 
+||   |  |     |  |  '\    |   |  |  (@||   |  | |    | 
+||   |  |     |  |  (@)   |   |__|___`||___|__| |    |
+||   |  |     |  |   \'   |   |[Chiperific.com] |    |
+||   |  |     |  |        |   |  |    ||   |  | |    | 
+\====================================================*/
+
 body {
+  min-height: 100%;
   margin-left: 8%;
   margin-right: 8%;
-  min-height: 100%;
-  border-style: solid;
-  border-width: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .wall {
@@ -33,89 +43,59 @@ body {
 [class*="panel"] {
   float: left;
   min-height: 1px;
-  border-style: solid;
-  border-width: 1px;
 }
 
-
-/* collapsable ------------------ */
-/* ================ Module 1 =================== */
-/* Greater than 1megapixel screens */
+/* -~-~-~ Margin management -~-~-~ */
 @media (min-width: 1440px) {
  [class*="panel"] {
     margin: .91% .91%;
   }
-
-/* F*ck the Width!!! */
-  .ftw1 {
-    margin: 100% !important;
-  }
-
-  .half, .third  {
-    display: none;
-  }
-
-  .panel1 {
-    width: 6.333333%;
-  }
-
-  .panel2 {
-    width: 14.666%;
-  }
-
-  .panel3 {
-    width: 23%;
-  }
-
-  .panel4 {
-    width: 31.333333%;
-  }
-
-  .panel5 {
-    width: 39.666667%;
-  }
-
-  .panel6 {
-    width: 48%;
-  }
-
-  .panel7 {
-    width: 56.333333%;
-  }
-
-  .panel8 {
-    width: 64.666667%;
-  }
-
-  .panel9 {
-    width: 73%;
-  }
-
-  .panel10 {
-    width: 81.333333%;
-  }
-
-  .panel11 {
-    width: 89.666667%;
-  }
-
-  .panel12 {
-    width: 98%;
-  } 
 }
 
-/* Large screens */
 @media (min-width: 1280px) and (max-width: 1439px) { 
   [class*="panel"] {
     margin: .90% .90%;
   } 
+}
 
-/* F*ck the Width!!! */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  [class*="panel"] {
+    margin: .85% .85%;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) {
+  [class*="panel"] {
+    margin: .85% .85%;
+  } 
+}
+
+@media (min-width: 640px) and (max-width: 799px) {
+  [class*="panel"] {
+    margin: .81% .81%;
+  }
+}
+
+@media (max-width: 639px) {
+  [class*="panel"] {
+    margin: .706% .706%;
+  }
+}
+
+.no-marg {
+  margin: 0px 0px !important
+}
+
+
+/* -~-~-~-~-~ collapsable -~-~-~-~-~-~-~- */
+/* ================ Module 1 =================== */
+@media (min-width: 1280px) {
+  /* F*ck The Width */
   .ftw1 {
-    margin: 100% !important;
+    width: 98% !important;
   }
 
-  .half, .third  {
+  .half, .third, .half-third  {
     display: none;
   }
 
@@ -165,104 +145,20 @@ body {
 
   .panel12 {
     width: 98%;
-  }
+  } 
 }
 
 /* ================ Module 2 =================== */
 /* Mid-range screens */
-@media (min-width: 1024px) and (max-width: 1279px) {
-  [class*="panel"] {
-    margin: .85% .85%;
-  }
-
-/* F*ck the Width!!! */
+@media (min-width: 640px) and (max-width: 1279px) {
+  /* F*ck the Width */
   .ftw2 {
-    margin: 100% !important;
+    width: 98% !important;
   }
 
-  .whole, .third  {
+  .whole, .third, .whole-third  {
     display: none;
   } 
-
-  .panel1 {
-    width: 14.666667%;
-  }
-
-  .panel2 {
-    width: 31.333333%;
-  }
-
-  .panel3 {
-    width: 48%;
-  }
-
-  .panel4 {
-    width: 64.666667%;
-  }
-
-  .panel5 {
-    width: 81.333333%;
-  }
-
-  .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12 {
-    width: 98%;
-  }
-}
-
-/* Low-range screens and tablets */
-@media (min-width: 800px) and (max-width: 1023px) {
-  [class*="panel"] {
-    margin: .85% .85%;
-  } 
-
-/* F*ck the Width!!! */
-  .ftw2 {
-    margin: 100% !important;
-  }
-
-  .whole, .third  {
-    display: none;
-  }
-
-  .panel1 {
-    width: 14.666667%;
-  }
-
-  .panel2 {
-    width: 31.333333%;
-  }
-
-  .panel3 {
-    width: 48%;
-  }
-
-  .panel4 {
-    width: 64.666667%;
-  }
-
-  .panel5 {
-    width: 81.333333%;
-  }
-
-  .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12 {
-    width: 98%;
-  }
-}
-
-/* tablets and mobile horizontal views */
-@media (min-width: 640px) and (max-width: 799px) {
-  [class*="panel"] {
-    margin: .81% .81%;
-  }
-
-/* F*ck the Width!!! */
-  .ftw2 {
-    margin: 100% !important;
-  } 
-
-  .whole, .third  {
-    display: none;
-  }
 
   .panel1 {
     width: 14.666667%;
@@ -290,51 +186,20 @@ body {
 }
 
 /* mobile vertical views */
-@media (min-width: 322px) and (max-width: 639px) {
+@media (max-width: 639px) {
   [class*="panel"] {
     margin: .706% .706%;
   }
 
-  .half, .whole  {
+  .half, .whole, .whole-half  {
     display: none;
   } 
 
-/* F*ck the Width!!! */
+  /* F*ck the Width */
   .ftw3 {
-    margin: 100% !important;
+    width: 98% !important;
   }
 
-  .panel1 {
-    width: 31.333333%;
-  }
-
-  .panel2 {
-    width: 48%;
-  }
-
-  .panel3 {
-    width: 64.666667%;
-  }
-
-  .panel4, .panel5,  .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12 {
-    width: 98%;
-  }
-}
-
-@media (max-width: 321px) {
-  [class*="panel"] {
-    margin: .706% .706%;
-  }
-
-  .half, .whole  {
-    display: none;
-  } 
-
-/* F*ck the Width!!! */
-  .ftw3 {
-    margin: 100% !important;
-  }
-  
   .panel1 {
     width: 31.333333%;
   }
