@@ -13,17 +13,27 @@
 ||   |  |     |  |        |   |  |    ||   |  | |    | 
 \====================================================*/
 
+/* demo content */
 body {
-
+  background-image: url('panel_wall_bg.jpg');
+  background-attachment: fixed;
+  color: white;
 }
 
+[class*="panel"] {
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+}
+/* end demo content */
+
 .wall {
-  min-height: 3%;
   width: 100%;
   *zoom: 1;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+  display: block; /* for easy centering of items */
 }
 
 .wall:before,
@@ -37,6 +47,7 @@ body {
 }
 
 [class*="panel"] {
+  display: block; /* for easy centering of items */
   float: left;
   min-height: 1px;
   /* for demos, show the boxes */
@@ -47,7 +58,7 @@ body {
 /* -~-~-~ Margin management -~-~-~ */
 @media (min-width: 1440px) {
  [class*="panel"] {
-    margin: .91% .91%;
+    margin: .93% .93%;
   }
 }
 
