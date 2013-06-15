@@ -50,9 +50,10 @@ body {
   display: block; /* for easy centering of items */
   float: left;
   min-height: 1px;
-  /* for demos, show the boxes */
-  border-width: 1px;
-  border-style: solid;
+}
+
+[class*="panel"] > [class*="panel"] {
+  margin: .73% .73%; /* nested panels need smaller margins */
 }
 
 /* -~-~-~ Margin management -~-~-~ */
