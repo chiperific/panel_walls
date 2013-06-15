@@ -39,6 +39,9 @@ body {
 [class*="panel"] {
   float: left;
   min-height: 1px;
+  /* for demos, show the boxes */
+  border-width: 1px;
+  border-style: solid;
 }
 
 /* -~-~-~ Margin management -~-~-~ */
