@@ -25,6 +25,11 @@ body {
   border-style: solid;
   border-color: white;
 }
+
+.no-border {
+  border-width: 0px !important;
+  border-style: none !important;
+}
 /* end demo content */
 
 .wall {
@@ -110,51 +115,51 @@ body {
     display: none;
   }
 
-  .panel1 {
+  .panel1, .whole-panel1 {
     width: 6.333333%;
   }
 
-  .panel2 {
+  .panel2, .whole-panel2 {
     width: 14.666%;
   }
 
-  .panel3 {
+  .panel3, .whole-panel3 {
     width: 23%;
   }
 
-  .panel4 {
+  .panel4, .whole-panel4 {
     width: 31.333333%;
   }
 
-  .panel5 {
+  .panel5, .whole-panel5 {
     width: 39.666667%;
   }
 
-  .panel6 {
+  .panel6, .whole-panel6 {
     width: 48%;
   }
 
-  .panel7 {
+  .panel7, .whole-panel7 {
     width: 56.333333%;
   }
 
-  .panel8 {
+  .panel8, .whole-panel8 {
     width: 64.666667%;
   }
 
-  .panel9 {
+  .panel9, .whole-panel9 {
     width: 73%;
   }
 
-  .panel10 {
+  .panel10, .whole-panel10 {
     width: 81.333333%;
   }
 
-  .panel11 {
+  .panel11, .whole-panel11 {
     width: 89.666667%;
   }
 
-  .panel12 {
+  .panel12, .whole-panel12 {
     width: 98%;
   } 
 }
@@ -171,27 +176,27 @@ body {
     display: none;
   } 
 
-  .panel1 {
+  .panel1, .half-panel1 {
     width: 14.666667%;
   }
 
-  .panel2 {
+  .panel2, .half-panel2 {
     width: 31.333333%;
   }
 
-  .panel3 {
+  .panel3, .half-panel3 {
     width: 48%;
   }
 
-  .panel4 {
+  .panel4, .half-panel4 {
     width: 64.666667%;
   }
 
-  .panel5 {
+  .panel5, .half-panel5 {
     width: 81.333333%;
   }
 
-  .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12 {
+  .panel6, .half-panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12 {
     width: 98%;
   }
 }
@@ -211,19 +216,19 @@ body {
     width: 98% !important;
   }
 
-  .panel1 {
+  .panel1, .third-panel1 {
     width: 31.333333%;
   }
 
-  .panel2 {
+  .panel2, .third-panel2 {
     width: 48%;
   }
 
-  .panel3 {
+  .panel3, .third-panel3 {
     width: 64.666667%;
   }
 
-  .panel4, .panel5,  .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12 {
+  .panel4, .third-panel4, .panel5,  .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12 {
     width: 98%;
   }
 }

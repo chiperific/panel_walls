@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Panel Wall - a truely scaled CSS grid framework</title>
+    <title>Panel Wall</title>
     <link rel="stylesheet" type="text/css" href="panel_wall.css">
   </head>
   <body>
     <div class="whole">
       <div class="wall">
         <h1>model 1.0</h1>
-        <h2>Screen sizes above 1200px wide</h2>
+        <h2 class="panel2 no-border">Screen sizes above 1200px wide</h2>
+        <h4 class="panel2 no-border">Visible through class="whole"</h4>
       </div>
       <div class="wall">
         <div class="panel1">Panel1</div>
@@ -84,11 +85,22 @@
           <div class="panel4">Nested Panel4</div>
         </div>  
       </div>
-    </div>
+    </div><!-- /.whole -->
+    <div class="whole-half">
+      <div class="wall">
+        <h2 class="panel2 no-border">model 1.0 and .5</h2>
+        <h4 class="panel2 no-border">Visible through class="whole-half"</h4>
+      </div>
+      <div class="wall">
+        <div class="whole-panel3 half-panel2">Whole-panel3 half-panel2</div>
+        <div class="whole-panel6 half-panel4">Whole-panel6 half-panel4</div>
+      </div>  
+    </div><!-- /.whole-half -->
     <div class="half">
       <div class="wall">
         <h1>model .5</h1>
-        <h2>Screen sizes between 800px and 1200px</h2>
+        <h2 class="panel2 no-border">Screen sizes between 800px and 1200px</h2>
+        <h4 class="panel2 no-border">Visible through class="half"</h4>
       </div>
       <div class="wall">
         <div class="panel1">Panel1</div>
@@ -150,11 +162,22 @@
           <div class="panel2">Nested Panel2</div>
         </div>  
       </div>
-    </div>
+    </div><!-- /.half -->
+    <div class="half-third">
+      <div class="wall">
+        <h2 class="panel2 no-border">model .5 and .333</h2>
+        <h4 class="panel2 no-border">Visible through class="half-third"</h4>
+      </div>
+      <div class="wall">
+        <div class="half-panel3 third-panel2">Half-panel3 third-panel2</div>
+        <div class="half-panel2 third-panel1">Half-panel2 third-panel1</div>
+      </div>  
+    </div><!-- /.half-third -->
     <div class="third">
       <div class="wall">
         <h1>model .333</h1>
-        <h2>Screen sizes below 640px</h2>
+        <h2 class="panel2 no-border">Screen sizes below 640px</h2>
+        <h4 class="panel2 no-border">Visible through class="third"</h4>
       </div>
       <div class="wall">
         <div class="panel1">Panel1</div>
