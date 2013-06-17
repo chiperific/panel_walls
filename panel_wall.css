@@ -201,6 +201,7 @@ body {
   }
 }
 
+/* ================ Module 3 =================== */
 /* mobile vertical views */
 @media (max-width: 639px) {
   [class*="panel"] {
